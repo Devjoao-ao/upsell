@@ -38,7 +38,7 @@ const OfferSection: React.FC<OfferSectionProps> = ({ isOfferExpired }) => {
                 <button
                     onClick={handleCTAClick}
                     disabled={isOfferExpired}
-                    className={`font-macroma w-full text-white font-bold text-lg md:text-xl py-4 px-6 rounded-lg transition-all duration-300 ease-in-out transform hover:scale-105 ${
+                    className={`font-macroma w-full text-white font-bold text-lg sm:text-xl py-4 px-6 rounded-lg transition-all duration-300 ease-in-out transform hover:scale-105 ${
                         isOfferExpired
                             ? 'bg-gray-600 cursor-not-allowed'
                             : 'bg-red-600 hover:bg-red-700 shadow-lg shadow-red-500/50 animate-pulse'
@@ -47,8 +47,8 @@ const OfferSection: React.FC<OfferSectionProps> = ({ isOfferExpired }) => {
                     {isOfferExpired ? 'OFERTA EXPIRADA' : 'SIM! Quero Desbloquear por Apenas 3.500 Kz'}
                 </button>
             </div>
-            <div className="text-center mt-8">
-                <a href="#final-thank-you" className="text-gray-500 text-sm hover:underline">
+            <div className="text-center mt-8 px-4">
+                <a href="#final-thank-you" className="text-gray-400 hover:underline">
                     Não, prefiro continuar sem o desbloqueio (aceito ganhos mais lentos)
                 </a>
             </div>
